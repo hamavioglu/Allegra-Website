@@ -22,3 +22,17 @@ nav{position:absolute;left:50%;top:50svh;transform:translateY(-50%);width:50%;pa
 .stage-caption{left:25px;right:25px;font-size:9px;flex-wrap:wrap}
 #render-status{left:25px;right:25px;font-size:11px}
 @media(max-width:760px){.viewer-header{padding:0 12px;gap:5px;font-size:7px;letter-spacing:0}.viewer-header button{font-size:10px;padding:10px 0}.viewer-header>span:nth-child(2){display:none}.viewer-stage{height:43svh;min-height:240px}.viewer-sidebar{padding:22px 14px}.viewer-eyebrow{font-size:7px;letter-spacing:1px}.viewer-sidebar h1{font-size:20px;letter-spacing:-1px}.viewer-sidebar p{font-size:11px}.viewer-sidebar .model-note{font-size:10px}.viewer-page select{padding:10px 5px;font-size:11px}.stage-caption{left:12px;right:12px;font-size:8px;gap:8px}#render-status{left:12px;right:12px;font-size:10px}.viewer-controls{gap:6px}.viewer-controls button{padding:9px 7px;font-size:10px}.upload-label{padding:12px 6px;font-size:11px}}
+/* White right-hand surface for navigation and Models. */
+.right-panel{background:#fff;border-left-color:#dedede}
+nav{color-scheme:light}nav a{color:#000}nav a:hover{color:#555}nav a:focus-visible{outline-color:#333}
+.viewer-page{color-scheme:light;background:#fff;color:#000;border-left-color:#dedede}
+.viewer-stage{background:#fff}
+.viewer-header,.viewer-sidebar{border-color:#dedede}
+.viewer-page button,.viewer-page select,.viewer-page .upload-label{color:#000;border-color:#bbb;background:#fff}
+.viewer-page select{background:#fff}
+.stage-caption,#render-status,.viewer-eyebrow,.viewer-sidebar p,.viewer-sidebar .model-note,#model-file{color:#444}
+.viewer-controls button[aria-pressed=true]{background:#000;color:#fff;border-color:#000}
+.viewer-page button:hover,.viewer-page .upload-label:hover{background:#f0f0f0}
+.viewer-controls button[aria-pressed=true]:hover{background:#222}
+.viewer-page button:focus-visible,.viewer-page select:focus-visible,#canvas-host:focus-visible{outline-color:#222}
+#model-file::file-selector-button{background:#fff;color:#000;border:1px solid #bbb;padding:8px;cursor:pointer}
