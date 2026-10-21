@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000000"><title>Allegra — Artpiece Furniture</title><meta name="description" content="Allegra. Form, flow, fluidity. Explore our world of artpiece furniture."><link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="entrance" aria-label="Allegra">
+<div class="right-panel" aria-hidden="true"></div>
+<button class="logo-button" aria-label="Open Allegra navigation" aria-expanded="false" aria-controls="site-navigation"><span class="logo-frame"><img src="assets/allegra-logo.png" alt="Allegra" width="1630" height="1500" draggable="false"></span></button>
+<nav id="site-navigation" aria-label="Main navigation" inert aria-hidden="true">
+<a href="#models" id="open-models" style="--i:0">Models</a>
+<a href="http://allegra.tr/designer/" style="--i:1">Designer</a>
+<a href="http://allegra.tr/magazines/" style="--i:2">Magazines</a>
+<a href="http://allegra.tr/contact/" style="--i:3">Contact</a>
+</nav>
+</main>
+<section class="viewer-page" id="models" hidden aria-label="3D model viewer">
+<header class="viewer-header"><button id="back-menu">← Back</button><span>ALLEGRA / OBJECT STUDY</span><span>360°</span></header>
+<div class="viewer-layout"><div class="viewer-stage"><div id="canvas-host" aria-label="Interactive 3D model. Use arrow keys to rotate and plus or minus to zoom." tabindex="0"></div><div class="stage-caption"><span id="object-label">BOX — DEMONSTRATION</span><span>Drag to rotate · Scroll to zoom</span></div><p id="render-status" role="status">Loading 3D viewer…</p></div>
+<aside class="viewer-sidebar"><span class="viewer-eyebrow">FORM / FLOW / FLUIDITY</span><h1>A new<br>perspective.</h1><p>Explore every curve, from every angle.</p><label for="model-choice">Object</label><select id="model-choice"><option value="demo">Box — demo</option><option>Marsha</option><option>Yvonne</option><option>Paula</option><option>Matilda</option><option>Iona</option><option>Berta</option><option>Olivia</option><option>Alexis</option><option>Marina</option></select><p class="model-note" id="model-note">Demonstration geometry. This is not an Allegra product. Load an original 3D file to explore your design.</p><label class="upload-label" for="model-file">Load 3D model ↗</label><input id="model-file" type="file" accept=".glb,.obj,.3ds" aria-label="Load 3D model"><p class="model-note">GLB / OBJ / 3DS · up to 50 MB<br>Your file stays in your browser.</p><div class="viewer-controls"><button id="auto-rotate" aria-pressed="false">Auto rotate</button><button id="reset-view">Reset view</button><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button></div></aside></div></section>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three-core":"./vendor/three.core.min.js","orbit-controls":"./vendor/OrbitControls.js","gltf-loader":"./vendor/GLTFLoader.js","geometry-utils":"./vendor/BufferGeometryUtils.js","obj-loader":"./vendor/OBJLoader.js","tds-loader":"./vendor/TDSLoader.js"}}</script>
+<script src="app.js"></script><script type="module" src="viewer.js"></script>
+</body></html>
