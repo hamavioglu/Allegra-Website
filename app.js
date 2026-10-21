@@ -9,5 +9,5 @@ function setOpen(open){
   navigation.inert=!open;
   navigation.setAttribute('aria-hidden',String(!open));
 }
-logo.addEventListener('click',()=>setOpen(logo.getAttribute('aria-expanded')!=='true'));
+logo.addEventListener('click',()=>{if(entrance.classList.contains('models-open')){document.querySelector('#back-menu').click();return}setOpen(logo.getAttribute('aria-expanded')!=='true')});
 document.addEventListener('keydown',event=>{if(event.key==='Escape')setOpen(false)});
